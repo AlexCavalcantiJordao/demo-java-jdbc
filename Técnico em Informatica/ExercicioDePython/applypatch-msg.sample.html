@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>applypatch-msg.sample</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6; font-weight: bold;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #c57633;}
+.s6 { color: #a9b7c6;}
+.s7 { color: #6897bb;}
+.ln { color: #606366; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+applypatch-msg.sample</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">#!/bin/sh</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s2">#</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s2"># An example hook script to check the commit log message taken by</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s2"># applypatch from an e-mail message.</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s2">#</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s2"># The hook should exit with non-zero status after issuing an</span>
+<a name="l7"><span class="ln">7    </span></a><span class="s2"># appropriate message if it wants to stop the commit.  The hook is</span>
+<a name="l8"><span class="ln">8    </span></a><span class="s2"># allowed to edit the commit message file.</span>
+<a name="l9"><span class="ln">9    </span></a><span class="s2">#</span>
+<a name="l10"><span class="ln">10   </span></a><span class="s2"># To enable this hook, rename this file to &quot;applypatch-msg&quot;.</span>
+<a name="l11"><span class="ln">11   </span></a>
+<a name="l12"><span class="ln">12   </span></a><span class="s1">. git-sh-setup</span>
+<a name="l13"><span class="ln">13   </span></a><span class="s1">commitmsg=</span><span class="s3">&quot;</span><span class="s4">$</span><span class="s1">(git rev-parse --git-path hooks/commit-msg)</span><span class="s3">&quot;</span>
+<a name="l14"><span class="ln">14   </span></a><span class="s5">test </span><span class="s1">-x </span><span class="s3">&quot;</span><span class="s6">$commitmsg</span><span class="s3">&quot; </span><span class="s4">&amp;&amp; </span><span class="s1">exec </span><span class="s3">&quot;</span><span class="s6">$commitmsg</span><span class="s3">&quot; </span><span class="s4">$</span><span class="s1">{</span><span class="s7">1</span><span class="s1">+</span><span class="s3">&quot;</span><span class="s6">$@</span><span class="s3">&quot;</span><span class="s1">}</span>
+<a name="l15"><span class="ln">15   </span></a><span class="s1">:</span>
+<a name="l16"><span class="ln">16   </span></a></pre>
+</body>
+</html>

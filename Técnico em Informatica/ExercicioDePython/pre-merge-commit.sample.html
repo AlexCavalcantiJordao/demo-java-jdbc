@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>pre-merge-commit.sample</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6; font-weight: bold;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #c57633;}
+.s4 { color: #6a8759;}
+.s5 { color: #a9b7c6;}
+.s6 { color: #cc7832;}
+.ln { color: #606366; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+pre-merge-commit.sample</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">#!/bin/sh</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s2">#</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s2"># An example hook script to verify what is about to be committed.</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s2"># Called by &quot;git merge&quot; with no arguments.  The hook should</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s2"># exit with non-zero status after issuing an appropriate message to</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s2"># stderr if it wants to stop the merge commit.</span>
+<a name="l7"><span class="ln">7    </span></a><span class="s2">#</span>
+<a name="l8"><span class="ln">8    </span></a><span class="s2"># To enable this hook, rename this file to &quot;pre-merge-commit&quot;.</span>
+<a name="l9"><span class="ln">9    </span></a>
+<a name="l10"><span class="ln">10   </span></a><span class="s1">. git-sh-setup</span>
+<a name="l11"><span class="ln">11   </span></a><span class="s3">test </span><span class="s1">-x </span><span class="s4">&quot;</span><span class="s5">$GIT_DIR</span><span class="s4">/hooks/pre-commit&quot; </span><span class="s6">&amp;&amp;</span>
+<a name="l12"><span class="ln">12   </span></a>        <span class="s1">exec </span><span class="s4">&quot;</span><span class="s5">$GIT_DIR</span><span class="s4">/hooks/pre-commit&quot;</span>
+<a name="l13"><span class="ln">13   </span></a><span class="s1">:</span>
+<a name="l14"><span class="ln">14   </span></a></pre>
+</body>
+</html>

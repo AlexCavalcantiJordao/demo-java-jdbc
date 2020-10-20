@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Resolver_1.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6897bb;}
+.s4 { color: #6a8759;}
+.ln { color: #606366; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Resolver_1.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">#  8) O IBGE está fazendo uma pesquisa sobre as características da população do Rio de Janeiro. Para tanto, eles fizeram uma pesquisa com 2000 pessoas e desejam saber as seguintes informações:</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0"># a) Quantidade de pessoas do sexo masculino</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s0"># b) Quantidade de pessoas do sexo feminino</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0"># c) Maior idade entre o sexo masculino</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s0"># d) Maior idade entre o sexo feminino</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0"># e) Maior idade entre os habitantes</span>
+<a name="l7"><span class="ln">7    </span></a><span class="s0"># f) Porcentagem de pessoas do sexo masculino</span>
+<a name="l8"><span class="ln">8    </span></a><span class="s0"># g) Porcentagem de pessoas do sexo feminino</span>
+<a name="l9"><span class="ln">9    </span></a><span class="s0"># h) Qual dos dois sexos é aparece em maior número na pesquisa</span>
+<a name="l10"><span class="ln">10   </span></a>
+<a name="l11"><span class="ln">11   </span></a><span class="s1">masc</span><span class="s2">, </span><span class="s1">femin</span><span class="s2">, </span><span class="s1">maior</span><span class="s2">, </span><span class="s1">menor</span><span class="s2">, </span><span class="s1">idade_masc</span><span class="s2">, </span><span class="s1">porce_masc</span><span class="s2">, </span><span class="s1">porce_femin</span><span class="s2">, </span><span class="s1">idade_femi</span><span class="s2">, </span><span class="s1">op = </span><span class="s3">0</span><span class="s2">,</span><span class="s3">0</span><span class="s2">,</span><span class="s3">0</span><span class="s2">,</span><span class="s3">0</span><span class="s2">,</span><span class="s3">0</span><span class="s2">,</span><span class="s3">0</span><span class="s2">,</span><span class="s3">0</span><span class="s2">,</span><span class="s3">0</span><span class="s2">,</span><span class="s3">0</span>
+<a name="l12"><span class="ln">12   </span></a>
+<a name="l13"><span class="ln">13   </span></a>
+<a name="l14"><span class="ln">14   </span></a><span class="s1">pessoas = int(input(</span><span class="s4">&quot; Informe os números de pessoas : &quot;</span><span class="s1">))</span>
+<a name="l15"><span class="ln">15   </span></a>
+<a name="l16"><span class="ln">16   </span></a><span class="s2">if</span><span class="s1">(op == masc) </span><span class="s2">is </span><span class="s1">staticmethod(op == masc):</span>
+<a name="l17"><span class="ln">17   </span></a>    <span class="s1">str(print(</span><span class="s4">f&quot; Informe a quantidade das pessoas do sexo masculinos : </span><span class="s2">{</span><span class="s1">maior &gt; menor</span><span class="s2">}</span><span class="s4">&quot;</span><span class="s1">))</span>
+<a name="l18"><span class="ln">18   </span></a>    <span class="s1">str(print(</span><span class="s4">f&quot; Tem mais sexo masculino do que sexo feminino ! </span><span class="s2">{</span><span class="s1">maior &gt; menor</span><span class="s2">}</span><span class="s4">, </span><span class="s2">{</span><span class="s1">menor &lt; maior</span><span class="s2">}</span><span class="s4">&quot;</span><span class="s1">))</span>
+<a name="l19"><span class="ln">19   </span></a>
+<a name="l20"><span class="ln">20   </span></a><span class="s2">if</span><span class="s1">(op == femin) </span><span class="s2">or </span><span class="s1">(op == femin):</span>
+<a name="l21"><span class="ln">21   </span></a>    <span class="s1">str(print(</span><span class="s4">f&quot; Informe a quantidade das pessoas do sexo feminino : </span><span class="s2">{</span><span class="s1">maior &gt; menor</span><span class="s2">}</span><span class="s4">&quot;</span><span class="s1">))</span>
+<a name="l22"><span class="ln">22   </span></a>    <span class="s1">str(print(</span><span class="s4">f&quot; Tem mais sexo feminino fo que masculino ! </span><span class="s2">{</span><span class="s1">maior &gt; menor</span><span class="s2">}</span><span class="s4">, </span><span class="s2">{</span><span class="s1">menor &lt; maior</span><span class="s2">}</span><span class="s4">&quot;</span><span class="s1">))</span>
+<a name="l23"><span class="ln">23   </span></a>
+<a name="l24"><span class="ln">24   </span></a><span class="s2">if</span><span class="s1">(op == idade_masc) </span><span class="s2">is </span><span class="s1">(op == idade_masc):</span>
+<a name="l25"><span class="ln">25   </span></a>    <span class="s1">str(print(</span><span class="s4">f&quot; Qual a idade entre os Homens ? : </span><span class="s2">{</span><span class="s1">idade_masc</span><span class="s2">}</span><span class="s4">&quot;</span><span class="s1">))</span>
+<a name="l26"><span class="ln">26   </span></a>    <span class="s1">str(print(</span><span class="s4">f&quot; O mais velho : </span><span class="s2">{</span><span class="s1">idade_masc &gt; idade_masc</span><span class="s2">}</span><span class="s4">, mais novo : </span><span class="s2">{</span><span class="s1">idade_masc &lt; idade_masc</span><span class="s2">}</span><span class="s4">&quot;</span><span class="s1">))</span>
+<a name="l27"><span class="ln">27   </span></a>
+<a name="l28"><span class="ln">28   </span></a><span class="s2">if</span><span class="s1">(op == idade_femi) </span><span class="s2">and </span><span class="s1">(op == femin):</span>
+<a name="l29"><span class="ln">29   </span></a>    <span class="s1">str(print(</span><span class="s4">f&quot; Informe a idade entres as mulheres : &quot;</span><span class="s1">))</span>
+<a name="l30"><span class="ln">30   </span></a>    <span class="s1">str(print(</span><span class="s4">f&quot; A mais velha : </span><span class="s2">{</span><span class="s1">idade_femi &gt; idade_femi</span><span class="s2">}</span><span class="s4">, mais nova : </span><span class="s2">{</span><span class="s1">idade_femi &lt; idade_femi</span><span class="s2">}</span><span class="s4">&quot;</span><span class="s1">))</span>
+<a name="l31"><span class="ln">31   </span></a><span class="s2">else</span><span class="s1">:</span>
+<a name="l32"><span class="ln">32   </span></a>    <span class="s1">print(</span><span class="s4">f&quot; Qual dos dois sexos é apareceu em maior número na pesquisa ? : </span><span class="s2">{</span><span class="s1">porce_masc</span><span class="s2">}</span><span class="s4">, </span><span class="s2">{</span><span class="s1">porce_femin</span><span class="s2">}</span><span class="s4">&quot;</span><span class="s1">)</span></pre>
+</body>
+</html>
